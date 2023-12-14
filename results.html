@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action = '/ask' method ='POST'>
+    <label for="ask">Question:</label><br/>
+    <textarea id="ask" name="ask" cols="50"></textarea>
+    <input type='submit' value='Submit' />
+    </form>
+<br /><br /><hr><br /><br />
+    <b>Question: </b> {{question}}<br/><br/>
+    <b>Answer: </b>
+    {%for line in answer%}
+    {{line}}<br />
+    {% endfor %}
+
+  </body>
+</html>
